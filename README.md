@@ -4,8 +4,8 @@ Completed the ["Create a DOB"](https://docs.nervos.org/docs/dapp/create-dob) tut
 
 ## Transaction
 
-| Network | Tx Hash | Explorer |
-|---------|---------|----------|
+| Network | Tx Hash |
+|---------|---------|
 | Testnet | `0xbe5e779e2955c2492fa01deadbb3a55a9358bc2c9660f7621ab3e1df8b1601f4` |
 
 ## Screenshots
