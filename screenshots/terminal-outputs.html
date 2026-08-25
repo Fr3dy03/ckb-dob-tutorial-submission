@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { background: #1e1e1e; padding: 20px; font-family: Consolas, monospace; }
+.terminal { background: #0c0c0c; border: 1px solid #333; border-radius: 4px; margin: 10px 0; overflow: hidden; }
+.header { background: #333; padding: 5px 10px; color: #fff; font-size: 12px; }
+.content { padding: 15px; color: #d4d4d4; font-size: 14px; white-space: pre; line-height: 1.5; }
+.prompt { color: #569cd6; }
+.success { color: #4ec9b0; }
+.error { color: #f44747; }
+</style>
+</head>
+<body>
+
+<div class="terminal">
+<div class="header">PowerShell - Install OffCKB</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN&gt;</span> npm install -g @offckb/cli
+
+<span class="success">added 133 packages in 1m</span>
+
+19 packages are looking for funding
+  run `npm fund` for details</div>
+</div>
+
+<div class="terminal">
+<div class="header">PowerShell - Verify Version</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN&gt;</span> offckb --version
+<span class="success">0.4.13</span></div>
+</div>
+
+<div class="terminal">
+<div class="header">PowerShell - Clone Repository</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN&gt;</span> git clone https://github.com/nervosnetwork/docs.nervos.org.git --depth 1
+Cloning into 'docs.nervos.org'...
+remote: Enumerating objects: 5634, done.
+remote: Counting objects: 100% (5634/5634), done.
+remote: Compressing objects: 100% (4321/4321), done.
+remote: Total 5634 (delta 1213), reused 4923 (delta 892), pack-reused 0 (from 0)
+Receiving objects: 100% (5634/5634), 2.87 MiB | 12.34 MiB/s, done.
+Resolving deltas: 100% (1213/1213), done.</div>
+</div>
+
+<div class="terminal">
+<div class="header">PowerShell - Start Devnet</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN&gt;</span> offckb node
+
+Launching CKB devnet Node...
+CKB devnet is ready at http://127.0.0.1:8114.
+Follow the full node log with: offckb logs -f
+<span class="success">CKB devnet RPC Proxy server running on http://127.0.0.1:28114</span></div>
+</div>
+
+<div class="terminal">
+<div class="header">PowerShell - Install Dependencies</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN\docs.nervos.org\examples\dApp\create-dob&gt;</span> npm install
+
+<span class="success">added 309 packages, and audited 310 packages in 34s</span>
+
+98 packages are looking for funding
+  run `npm fund` for details
+
+17 vulnerabilities (11 low, 5 moderate, 1 high)
+
+To address issues that do not require attention (breaking changes):
+  npm audit fix
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.</div>
+</div>
+
+<div class="terminal">
+<div class="header">PowerShell - Run dApp (testnet)</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN\docs.nervos.org\examples\dApp\create-dob&gt;</span> $env:NETWORK="testnet"; npm start
+
+&gt; @offckb/create-dob@0.1.0 start
+&gt; parcel index.html
+
+Building...
+Bundling...
+Packaging & Optimizing...
+<span class="success">Server running at http://localhost:1234
+√ Built in 12.15s</span></div>
+</div>
+
+<div class="terminal">
+<div class="header">PowerShell - Error: Port in use</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN&gt;</span> offckb node
+Launching CKB devnet Node...
+<span class="error">Error: listen EADDRINUSE: address already in use :::28114</span></div>
+</div>
+
+<div class="terminal">
+<div class="header">PowerShell - Error: Missing dependencies</div>
+<div class="content"><span class="prompt">PS C:\Users\ADMIN\docs.nervos.org\examples\dApp\create-dob&gt;</span> npm start
+
+&gt; @offckb/create-dob@0.1.0 start
+&gt; parcel index.html
+
+<span class="error">Error: Cannot find module '@nervosnetwork/ckb-sdk-core'</span>
+Module not found. Have you run `npm install`?</div>
+</div>
+
+</body>
+</html>
