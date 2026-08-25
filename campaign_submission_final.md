@@ -19,15 +19,10 @@ $env:NETWORK="testnet"; npm start
 
 ## Transaction
 
-| Network | Tx Hash | Explorer |
-|---------|---------|----------|
-| Testnet | `0xbe5e779e2955c2492fa01deadbb3a55a9358bc2c9660f7621ab3e1df8b1601f4` | [View](https://explorer.nervos.org/testnet/transaction/0xbe5e779e2955c2492fa01deadbb3a55a9358bc2c9660f7621ab3e1df8b1601f4) |
+| Network | Tx Hash |
+|---------|---------|
+| Testnet | `0xbe5e779e2955c2492fa01deadbb3a55a9358bc2c9660f7621ab3e1df8b1601f4` |
 
-## Screenshot
-
-![DOB dApp on testnet](screenshot.png)
-
-Image uploaded, stored on-chain, rendered back from blockchain data. `contentType: image/jpeg` in the cell metadata.
 
 ## Reflection
 
