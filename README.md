@@ -6,7 +6,7 @@ Completed the ["Create a DOB"](https://docs.nervos.org/docs/dapp/create-dob) tut
 
 | Network | Tx Hash | Explorer |
 |---------|---------|----------|
-| Testnet | `0xbe5e779e2955c2492fa01deadbb3a55a9358bc2c9660f7621ab3e1df8b1601f4` | [View on Explorer](https://explorer.nervos.org/testnet/transaction/0xbe5e779e2955c2492fa01deadbb3a55a9358bc2c9660f7621ab3e1df8b1601f4) |
+| Testnet | `0xbe5e779e2955c2492fa01deadbb3a55a9358bc2c9660f7621ab3e1df8b1601f4` |
 
 ## Screenshots
 
